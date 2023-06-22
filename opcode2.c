@@ -112,7 +112,7 @@ void _pchar(stack_t **doubly, unsigned int cline)
 {
 	if (doubly == NULL || *doubly == NULL)
 	{
-		dprintf(2, "L%u: can't pchar, stack empty\n", cline);
+		vprintf(2, "L%u: can't pchar, stack empty\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}

@@ -85,8 +85,8 @@ int main(int argc, char *argv[])
 			f = get_opcodes(lines[0]);
 			if (!f)
 			{
-				dprintf(2, "L%u: ", vglo.cont);
-				dprintf(2, "unknown instruction %s\n", lines[0]);
+				vprintf(2, "L%u: ", vglo.cont);
+				vprintf(2, "unknown instruction %s\n", lines[0]);
 				free_vglo();
 				exit(EXIT_FAILURE);
 			}
